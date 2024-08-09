@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: subscription-core
+
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: jdbc:mysql://localhost:3306/portal_homeless?userUnicode=yes&characterEncoding=UTF-8&rewriteBatchedStatements=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      max-lifetime: 30000
+      connection-timeout: 3000
+      username: root
+      password: user
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true

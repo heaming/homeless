@@ -1,0 +1,4 @@
+rootProject.name = 'homeless'
+include 'subscription-api'
+include 'subscription-core'
+
